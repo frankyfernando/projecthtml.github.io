@@ -1,0 +1,207 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    max-width: 1000px;
+    background: aliceblue;
+    margin: 0 auto;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.wrapper{
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    color:#364f6b;
+}
+.logo img{
+    width: 200px;
+    height: 50px;
+}
+.menu{
+    float: right;
+}
+nav{
+    width: 100%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    line-height: 80px;
+    position: sticky;
+    top:0;
+    background-image: linear-gradient(134deg, rgb(137, 64, 231) , white 42%,#2e7eda);
+    z-index: 1;
+    border-bottom: 3px solid #265d9c;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow:  0px 0px 5px  5px rgba(0, 0, 0, 0.25);
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    transition: ease 0.5s;
+}
+nav ul li a {
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: blue;
+}
+nav ul ul{
+    display: none;
+    position:absolute;
+    top: 60px;
+    margin-top: 20px;
+}
+nav ul li:hover > ul{
+    display: block;
+    background-color: aliceblue;
+}
+nav ul ul li{
+    width: 270px;
+    line-height: 60px;
+    text-decoration: none;
+}
+nav ul ul li:hover{
+    background-color: gray ;
+}
+nav ul ul li a:hover{
+    text-decoration: none;
+    color: black;
+}
+section {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'comic sans ms';
+    color: #364f6b;
+    padding: auto;
+}
+.wrapper video {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+img{
+    max-width: 500px;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+h1{
+    font-family:'comic sans ms';
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #364f6b;
+}
+h2 {
+    font-family:'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    line-height: 50px;
+}
+
+a.tbl-pink{
+    background: #af3f8a;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight:bold;
+}
+a.tbl-pink:hover{
+    background: blue;
+    text-decoration: none;
+}
+p{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+.tengah{
+    text-align: center;
+    width: 100%;
+}
+.partnerList{
+    width: 100%;
+    display: flex;
+}
+.kartuPartners{
+    width: 20%;
+    margin:  auto;
+}
+.kartuPartners img{
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: auto;
+    background-image: linear-gradient(rgb(109, 108, 108) 10%,rgb(65, 64, 64) 90%);
+}
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+.footer-section img{
+    width: 30px;
+}
+h3{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 20px;
+    padding-top: 20px;
+}
+#copyright {
+    text-align: center;
+    padding: 50px;
+}
+
+@media (max-width: 480px){
+}
