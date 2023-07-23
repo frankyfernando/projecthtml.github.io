@@ -1,13 +1,14 @@
 *{
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+    box-sizing: border-box;
 }
-.container{
+.container
+{
+    background-color: aliceblue;
     max-width: 1000px;
-    background: aliceblue;
     margin: 0 auto;
+    display: grid;
 }
+
 body{
     margin: 0px;
     padding: 0px;
@@ -16,21 +17,16 @@ body{
 .wrapper{
     max-width: 900px;
     margin: auto;
-    position: relative;
-}
-.wrapper{
-    max-width: 900px;
-    margin: auto;
-    position: relative;
 }
 .logo{
+    float: left;
     font-size: 50px;
     font-weight: 800;
-    float: left;
     color:#364f6b;
 }
 .logo img{
     width: 200px;
+    height: 50px;
 }
 .menu{
     float: right;
@@ -92,32 +88,37 @@ nav ul li .dropdown-menu li a{
     display: block;
     text-align: left;
 }
-nav ul ul li a:hover{
+nav ul ul li:hover a{
     color: black;
 }
-p{
-    margin: 10px 0px 10px 0px;
-    padding: 10px 0px 10px 0px;
-}
-main img{
-    width: 600px;
-    margin-left: 150px;
-}
-.wrapper p img{
-    width: 20px;
-    margin: 0;
-    padding-right: 10px;
-    justify-content: center;
+.grid
+{
+    display: grid;
+    margin: 50px;
     align-items: center;
-    
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.grid > img
+{
+    border-radius: 20px;
+    width: 400px;
+}
+.grid p{
+    display: flex;
+    justify-content: start;
+}
+.grid > img:hover
+{
+    transform: rotate(10deg);
 }
 .footer{
-    max-width: 100%;
+    max-width: 1000%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: auto;
     background-image: linear-gradient(rgb(109, 108, 108) 10%,rgb(65, 64, 64) 90%);
 }
 .footer-section{
@@ -138,39 +139,29 @@ main img{
 .footer-section img{
     width: 30px;
 }
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-}
-h1{
-    font-family:'comic sans ms';
-    font-weight: 500;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: #364f6b;
-}
-h2 {
-    font-family:'comic sans ms';
-    font-weight: 800;
-    font-size: 45px;
-    margin-bottom: 20px;
-    color: #364f6b;
-    line-height: 50px;
-}
 h3{
     display: flex;
     justify-content: center;
     font-family: 'comic sans ms';
-    font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: #3b3588;
+    font-weight: bold;
     width: 100%;
     line-height: 20px;
     padding-top: 20px;
 }
+h1{
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
 #copyright {
     text-align: center;
     padding: 50px;
+}
+@media (max-width:1000px){
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
 }

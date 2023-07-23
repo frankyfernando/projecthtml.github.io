@@ -1,7 +1,5 @@
 *{
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+    box-sizing: border-box;
 }
 .container{
     max-width: 1000px;
@@ -16,12 +14,11 @@ body{
 .wrapper{
     max-width: 900px;
     margin: auto;
-    position: relative;
 }
 .logo{
+    float: left;
     font-size: 50px;
     font-weight: 800;
-    float: left;
     color:#364f6b;
 }
 .logo img{
@@ -35,11 +32,9 @@ nav{
     width: 100%;
     margin: auto;
     display:flex;
-    justify-content: space-between;
     line-height: 80px;
     position: sticky;
-    top:0;
-    background-image: linear-gradient(134deg, rgb(137, 64, 231) , white 42%,#2e7eda);
+    background-image: linear-gradient(134deg, #2e7eda , white 42%,#2e7eda);
     z-index: 1;
     border-bottom: 3px solid #265d9c;
     border-radius: 0px 0px 30px 30px;
@@ -49,46 +44,48 @@ nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 nav ul li {
-    float: left;
+    display: inline-block;
     transition: ease 0.5s;
+    position: relative;
 }
 nav ul li a {
     color:black;
     font-weight: bold;
     text-align: center;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 16px;
     text-decoration: none;
     transition: ease 0.5s;
 }
 
-nav ul li a:hover {
+nav ul > li:hover > a{
     text-decoration: none;
     color: blue;
 }
-nav ul ul{
-    display: none;
-    position:absolute;
-    top: 60px;
-    margin-top: 20px;
-}
-nav ul li:hover > ul{
-    display: block;
-    background-color: aliceblue;
-}
-nav ul ul li{
+nav ul .dropdown-menu{
     width: 270px;
-    line-height: 60px;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+nav ul li .dropdown-menu li{
+    display: none;
+    width: 270px;
     text-decoration: none;
 }
-nav ul ul li:hover{
+nav ul > li:hover > .dropdown-menu > li{
+    display: block;
+    background: aliceblue;
+}
+nav ul li .dropdown-menu li:hover{
     background-color: gray ;
 }
-nav ul ul li a:hover{
-    text-decoration: none;
+nav ul li .dropdown-menu li a{
+    display: block;
+    text-align: left;
+}
+nav ul ul li:hover a{
     color: black;
 }
 section {
@@ -170,30 +167,28 @@ p{
 }
 .kartuPartners img{
     width: 150px;
-    justify-content: center;
-    align-items: center;
 }
 .footer{
     max-width: 100%;
     display: flex;
-    position: relative;
     flex-wrap: wrap;
-    margin: auto;
     background-image: linear-gradient(rgb(109, 108, 108) 10%,rgb(65, 64, 64) 90%);
 }
 .footer-section{
     width: 20%;
     margin: 0 auto;
+    color: rgb(184, 182, 182);
+    font-weight: bold;   
 }
 .footer-section img{
     width: 30px;
 }
 h3{
     font-family: 'comic sans ms';
-    font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: #3b3588;
+    font-weight: bold;
     width: 100%;
     line-height: 20px;
     padding-top: 20px;
